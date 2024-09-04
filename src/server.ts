@@ -13,12 +13,19 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.get("/nq", (req: Request, res: Response) => {
-    res.send("pn");
-})
+  res.send("pn");
+});
+app.get("/LeMinhTri", (req: Request, res: Response) => {
+  res.send("LeVietKhanh");
+});
 
 app.listen(port, () => {
-  SLog.log(LogType.Info, "Listen", "server is running at http://localhost", port);
-
-  // goi mysql server de chay na
-  SMySQL.connect();
+  SLog.log(
+    LogType.Info,
+    "Listen",
+    "server is running at http://localhost",
+    port
+  );
 });
+// goi mysql server de chay na
+SMySQL.connect();
