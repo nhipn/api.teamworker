@@ -132,9 +132,9 @@ dist
 # database
 *.sql
 
-#firebase
+# firebase
 *_account_service.json
 
-
-#mac
+# mac
 *.DS_Store
+
