@@ -21,12 +21,12 @@ export default class SMySQL {
         port: port,
       });
 
-      SLog.log(LogType.Info, "init sql", "check parameters", {
-        user: user,
-        password: password,
-        database: database,
-        port: port,
-      });
+      // SLog.log(LogType.Info, "init sql", "check parameters", {
+      //   user: user,
+      //   password: password,
+      //   database: database,
+      //   port: port,
+      // });
     }
   }
 

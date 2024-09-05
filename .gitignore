@@ -133,4 +133,4 @@ dist
 *.sql
 
 #firebase
-*-account-service.json
+*_account_service.json
