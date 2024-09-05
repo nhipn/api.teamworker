@@ -32,8 +32,12 @@ app.get("/api/notification", (req: Request, res: Response) => {
 })
 
 app.listen(port, () => {
-  SLog.log(LogType.Info, "Listen", "server is running at http://localhost", port);
-
-  // goi mysql server de chay na
-  SMySQL.connect();
+  SLog.log(
+    LogType.Info,
+    "Listen",
+    "server is running at http://localhost",
+    port
+  );
 });
+// goi mysql server de chay na
+SMySQL.connect();
